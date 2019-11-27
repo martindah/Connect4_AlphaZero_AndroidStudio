@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmainmenu"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context="info.overrideandroid.connect4.activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="350dp"
+        android:maxHeight="350dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/four11"
+        />
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:drawableTop="@mipmap/ic_launcher_foreground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="20dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+</LinearLayout>

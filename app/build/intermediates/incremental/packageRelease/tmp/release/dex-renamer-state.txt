@@ -1,0 +1,4 @@
+#Fri Oct 18 15:43:11 CEST 2019
+base.0=C\:\\Users\\mdahlkild\\Documents\\Egna projekt\\AnroidStudioAIbot\\AI4connect_utveckla_AI\\AI4Connect_TFmodell_med_MCTS\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

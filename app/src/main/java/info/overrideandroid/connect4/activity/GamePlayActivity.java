@@ -10,6 +10,8 @@ import android.view.MenuItem;
 
 import info.overrideandroid.connect4.R;
 import info.overrideandroid.connect4.ai.AiPlayer;
+import info.overrideandroid.connect4.board.BoardLogic;
+import info.overrideandroid.connect4.controller.GameMenuController;
 import info.overrideandroid.connect4.controller.GamePlayController;
 import info.overrideandroid.connect4.rules.GameRules;
 import info.overrideandroid.connect4.view.BoardView;
@@ -40,7 +42,9 @@ public class GamePlayActivity extends AppCompatActivity {
         mGameController = new GamePlayController(this, boardView, mGameRules);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_action_close);
-        tf = new TensorFlowInferenceInterface(getAssets(),AiPlayer.mPath);
+        if(mGameRules.getRule(GameRules.OPPONENT) == GameRules.Opponent.AI){
+            tf = new TensorFlowInferenceInterface(getAssets(),AiPlayer.mPath);
+        }
     }
 
     @Override
